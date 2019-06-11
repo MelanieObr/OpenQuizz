@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Balham.otf">
+            <string>Balham</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UGt-fF-3WQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="A0u-1e-fep">
+                                <rect key="frame" x="86.5" y="303" width="241" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="FaK-dk-wsr"/>
+                                    <constraint firstAttribute="width" secondItem="A0u-1e-fep" secondAttribute="height" multiplier="241:290" id="lPx-xz-Czx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPad Version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CT-Tu-da4">
+                                <rect key="frame" x="301" y="974" width="166" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="bZi-eb-vsx"/>
+                                    <constraint firstAttribute="height" constant="30" id="npl-VX-jhL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bZi-eb-vsx"/>
+                                        <exclude reference="npl-VX-jhL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="bZi-eb-vsx"/>
+                                        <include reference="npl-VX-jhL"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35233712196350098" green="0.42291757464408875" blue="0.50115662813186646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A0u-1e-fep" firstAttribute="centerX" secondItem="UGt-fF-3WQ" secondAttribute="centerX" id="ITL-Ul-NBK"/>
+                            <constraint firstItem="7CT-Tu-da4" firstAttribute="centerX" secondItem="UGt-fF-3WQ" secondAttribute="centerX" id="Xg2-WJ-qi6"/>
+                            <constraint firstItem="A0u-1e-fep" firstAttribute="centerY" secondItem="UGt-fF-3WQ" secondAttribute="centerY" id="byt-Wx-BDN"/>
+                            <constraint firstItem="zib-2g-ioD" firstAttribute="bottom" secondItem="7CT-Tu-da4" secondAttribute="bottom" constant="20" id="rCg-VO-cgi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zib-2g-ioD"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7CT-Tu-da4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="rCg-VO-cgi"/>
+                                <exclude reference="Xg2-WJ-qi6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="7CT-Tu-da4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="rCg-VO-cgi"/>
+                                <include reference="Xg2-WJ-qi6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Loading" width="241" height="290"/>
+    </resources>
+    <color key="tintColor" red="0.35233712196350098" green="0.42291757464408875" blue="0.50115662813186646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
